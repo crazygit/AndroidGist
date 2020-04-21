@@ -9,4 +9,15 @@
     <string name="jetpack_livedata">Architecture Components: LiveData</string>
     <string name="generate_name">Generate Name</string>
     <string name="show_name">Show Name</string>
+    <string name="animator_demo"><![CDATA[ValueAnimator & ObjectAnimator Demo]]></string>
+    <string name="animator_set_demo">AnimatorSet Demo</string>
+    <string name="move_textview_by_value_animator_code">Move TextView By ValueAnimatorCode</string>
+    <string name="move_textview_by_value_animator_xml">Move TextView By ValueAnimator XML</string>
+    <string name="move_textview_by_object_animator_code">Move TextView By ObjectAnimator Code</string>
+    <string name="move_textview_by_object_animator_xml">Move TextView By ObjectAnimator XML</string>
+    <string name="click_button_to_move_me">Click Button to move me</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="start">Start</string>
 </resources>

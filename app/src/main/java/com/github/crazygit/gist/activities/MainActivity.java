@@ -1,12 +1,9 @@
-package com.github.crazygit.gist;
+package com.github.crazygit.gist.activities;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
-import com.github.crazygit.gist.activities.AnimationsAndTransitions;
-import com.github.crazygit.gist.activities.Jetpack;
-import com.github.crazygit.gist.activities.UserInterfaceAndNavigation;
+import com.github.crazygit.gist.R;
 import com.github.crazygit.gist.base.BaseActivity;
 import com.github.crazygit.gist.databinding.ActivityMainBinding;
 
@@ -14,14 +11,11 @@ import com.github.crazygit.gist.databinding.ActivityMainBinding;
 // app/build/generated/data_binding_base_class_source_out
 public class MainActivity extends BaseActivity<ActivityMainBinding> implements View.OnClickListener {
     private static final String TAG = "MainActivity";
-    //        private  ActivityMainBinding binding;
 
+    //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        binding = ActivityMainBinding.inflate(getLayoutInflater());
-//        View view = binding.getRoot();
-//        setContentView(view);
         dataBinding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(dataBinding.getRoot());
         dataBinding.btnUi.setOnClickListener(this);

@@ -1,7 +1,9 @@
 package com.github.crazygit.gist.base;
 
 import android.content.Intent;
+import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewbinding.ViewBinding;
 
@@ -21,8 +23,34 @@ public abstract class BaseActivity<B extends ViewBinding> extends AppCompatActiv
 //    protected void bindView(@LayoutRes int layoutId) {
 //        dataBinding = DataBindingUtil.setContentView(this, layoutId);
 //    }
+
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+//        bindView();
+    }
+
     public void startSubActivity(Class<?> cls) {
         Intent intent = new Intent(this, cls);
         startActivity(intent);
     }
+
+
+//    private void bindView() {
+//        这里不知道如何获取class
+//        Class viewBindingClass = dataBinding.getClass();
+//        Method inflateMethod = null;
+//        try {
+//            inflateMethod = viewBindingClass.getMethod("inflate", LayoutInflater.class);
+//            dataBinding = (B) inflateMethod.invoke(viewBindingClass, getLayoutInflater());
+//            setContentView(dataBinding.getRoot());
+//        } catch (InvocationTargetException | IllegalAccessException e) {
+//            e.printStackTrace();
+//        } catch (NoSuchMethodException e) {
+//            e.printStackTrace();
+//
+//            setContentView(dataBinding.getRoot());
+//        }
+//    }
 }

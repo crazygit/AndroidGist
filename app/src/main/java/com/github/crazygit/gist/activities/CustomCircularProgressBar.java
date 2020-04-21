@@ -9,7 +9,6 @@ import com.github.crazygit.gist.databinding.ActivityCustomCircularProgressBarBin
 
 public class CustomCircularProgressBar extends BaseActivity<ActivityCustomCircularProgressBarBinding> implements View.OnClickListener {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
