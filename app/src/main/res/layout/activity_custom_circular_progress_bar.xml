@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CustomCircularProgressBar">
+
+    <com.github.crazygit.gist.widget.CircularProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        custom:arcColor="@android:color/holo_green_dark"
+        custom:backgroundCircularColor="@android:color/darker_gray"
+        custom:process="50"
+        custom:radius="100dp"
+        custom:strokeWidth="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_circular"
+        android:layout_centerHorizontal="true"
+        >
+    <Button
+        android:id="@+id/btn_increase_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/increase_progress" />
+    <Button
+        android:id="@+id/btn_decrease_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decrease_progress" />
+    </LinearLayout>
+
+</RelativeLayout>

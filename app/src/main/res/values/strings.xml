@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidGist</string>
+    <string name="custom_view">Custom View: CustomCircularProgressBar</string>
+    <string name="user_interface_navigation"><![CDATA[User Interface & Navigation]]></string>
+    <string name="animations_transitions"><![CDATA[Animations & Transitions]]></string>
+    <string name="increase_progress">+10%</string>
+    <string name="decrease_progress">-10%</string>
+</resources>
