@@ -5,6 +5,11 @@ import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewbinding.ViewBinding;
 
+
+// ViewBinding需要在app/build.gradle中添加如下依赖
+
+// implementation 'androidx.databinding:viewbinding:3.6.3'
+
 public abstract class BaseActivity<B extends ViewBinding> extends AppCompatActivity {
 
     protected B dataBinding;

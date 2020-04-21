@@ -6,7 +6,6 @@ import android.view.View;
 import com.github.crazygit.gist.R;
 import com.github.crazygit.gist.base.BaseActivity;
 import com.github.crazygit.gist.databinding.ActivityCustomCircularProgressBarBinding;
-import com.github.crazygit.gist.widget.CircularProgressBar;
 
 public class CustomCircularProgressBar extends BaseActivity<ActivityCustomCircularProgressBarBinding> implements View.OnClickListener {
 

@@ -1,9 +1,11 @@
 package com.github.crazygit.gist;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.github.crazygit.gist.activities.AnimationsAndTransitions;
+import com.github.crazygit.gist.activities.Jetpack;
 import com.github.crazygit.gist.activities.UserInterfaceAndNavigation;
 import com.github.crazygit.gist.base.BaseActivity;
 import com.github.crazygit.gist.databinding.ActivityMainBinding;
@@ -11,6 +13,7 @@ import com.github.crazygit.gist.databinding.ActivityMainBinding;
 // 布局文件对应的类生成路径为
 // app/build/generated/data_binding_base_class_source_out
 public class MainActivity extends BaseActivity<ActivityMainBinding> implements View.OnClickListener {
+    private static final String TAG = "MainActivity";
     //        private  ActivityMainBinding binding;
 
     @Override
@@ -23,6 +26,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements V
         setContentView(dataBinding.getRoot());
         dataBinding.btnUi.setOnClickListener(this);
         dataBinding.btnAnimations.setOnClickListener(this);
+        dataBinding.btnJetpack.setOnClickListener(this);
     }
 
 
@@ -34,6 +38,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements V
                 break;
             case R.id.btn_animations:
                 startSubActivity(AnimationsAndTransitions.class);
+                break;
+            case R.id.btn_jetpack:
+                startSubActivity(Jetpack.class);
                 break;
             default:
                 break;

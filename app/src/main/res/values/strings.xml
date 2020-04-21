@@ -5,4 +5,8 @@
     <string name="animations_transitions"><![CDATA[Animations & Transitions]]></string>
     <string name="increase_progress">+10%</string>
     <string name="decrease_progress">-10%</string>
+    <string name="jetpack">Jetpack</string>
+    <string name="jetpack_livedata">Architecture Components: LiveData</string>
+    <string name="generate_name">Generate Name</string>
+    <string name="show_name">Show Name</string>
 </resources>
