@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
 
         <TextView
             android:id="@+id/tv_a"
@@ -34,15 +34,35 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="@string/c" />
+
+        <TextView
+            android:id="@+id/tv_d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/d" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_start"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/start">
+        android:orientation="horizontal">
 
-    </Button>
+        <Button
+            android:id="@+id/btn_start_abc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:text="@string/start_abc" />
+
+        <Button
+            android:id="@+id/btn_start_d"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="@string/start_d" />
+    </LinearLayout>
 </RelativeLayout>

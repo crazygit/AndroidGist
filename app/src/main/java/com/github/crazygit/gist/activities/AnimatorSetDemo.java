@@ -16,29 +16,39 @@ public class AnimatorSetDemo extends BaseActivity<ActivityAnimatorSetDemoBinding
         super.onCreate(savedInstanceState);
         dataBinding = ActivityAnimatorSetDemoBinding.inflate(getLayoutInflater());
         setContentView(dataBinding.getRoot());
-        dataBinding.btnStart.setOnClickListener(this);
+        dataBinding.btnStartAbc.setOnClickListener(this);
+        dataBinding.btnStartD.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn_start:
+            case R.id.btn_start_abc:
+                // AnimatorSet作用于多个控件
                 int duration = 2000;
-                ObjectAnimator textViewAAnimation = ObjectAnimator.ofFloat(dataBinding.tvA, "translationY", 300f);
+                ObjectAnimator textViewAAnimation = ObjectAnimator.ofFloat(dataBinding.tvA, "translationY", 0, 300f);
                 textViewAAnimation.setDuration(duration);
 
                 ObjectAnimator textViewBAnimation = ObjectAnimator.ofFloat(dataBinding.tvB, "alpha", 1f, 0f);
                 textViewBAnimation.setDuration(duration);
 
-                ObjectAnimator textViewCAnimation = ObjectAnimator.ofFloat(dataBinding.tvC, "rotation", 360);
+                ObjectAnimator textViewCAnimation = ObjectAnimator.ofFloat(dataBinding.tvC, "rotation", 0, 360);
                 textViewCAnimation.setDuration(duration);
 
-                // 从效果来看， AnimatorSet运行之后会一直保持最后的状态？
                 AnimatorSet animatorSet = new AnimatorSet();
                 animatorSet.play(textViewAAnimation).with(textViewBAnimation);
                 animatorSet.play(textViewAAnimation).with(textViewCAnimation);
                 animatorSet.start();
                 break;
+            case R.id.btn_start_d:
+                // AnimatorSet作用于一个控件
+                ObjectAnimator rotationAnimator = ObjectAnimator.ofFloat(dataBinding.tvD, "rotation", 0, 360f);
+                rotationAnimator.setDuration(2000);
+                ObjectAnimator translateAnimator = ObjectAnimator.ofFloat(dataBinding.tvD, "translationY", 0, 500f);
+                translateAnimator.setDuration(2000);
+                AnimatorSet set = new AnimatorSet();
+                set.playTogether(rotationAnimator, translateAnimator);
+                set.start();
             default:
                 break;
         }

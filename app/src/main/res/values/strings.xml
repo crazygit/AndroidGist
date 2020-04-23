@@ -19,5 +19,16 @@
     <string name="a">A</string>
     <string name="b">B</string>
     <string name="c">C</string>
-    <string name="start">Start</string>
+    <string name="start_abc">Animation on ABC</string>
+    <string name="start_d">Animation on D</string>
+    <string name="d">D</string>
+    <string name="testing">Testing</string>
+    <string name="my_settings">My Settings</string>
+    <string name="your_name">Your name:</string>
+    <string name="name">Name</string>
+    <string name="your_date_of_birth">Your date of birth</string>
+    <string name="your_email_address">Your Email Address</string>
+    <string name="email">email</string>
+    <string name="save">Save</string>
+    <string name="revert">Revert</string>
 </resources>

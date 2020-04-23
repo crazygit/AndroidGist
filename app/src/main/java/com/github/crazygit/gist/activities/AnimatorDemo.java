@@ -13,6 +13,11 @@ import com.github.crazygit.gist.databinding.ActivityAnimatorDemoBinding;
 
 //
 // ValueAnimator与ObjectAnimator的基本使用
+// https://medium.com/@shubham08gupta/a-beginners-guide-to-implement-android-animations-part-1-2-part-series-b5fce1fc85
+// https://medium.com/@shubham08gupta/animations-v2-2ada6ef3e5c8
+// 进阶使用，参考
+// https://hencoder.com/ui-1-6/
+// https://hencoder.com/ui-1-7/
 //
 public class AnimatorDemo extends BaseActivity<ActivityAnimatorDemoBinding> implements View.OnClickListener {
 
