@@ -22,6 +22,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements V
         dataBinding.btnAnimations.setOnClickListener(this);
         dataBinding.btnJetpack.setOnClickListener(this);
         dataBinding.btnTesting.setOnClickListener(this);
+        dataBinding.btnCamerax.setOnClickListener(this);
     }
 
 
@@ -39,6 +40,10 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> implements V
                 break;
             case R.id.btn_testing:
                 startSubActivity(TestUI.class);
+                break;
+            case R.id.btn_camerax:
+                startSubActivity(CameraXDemo.class);
+                break;
             default:
                 break;
         }

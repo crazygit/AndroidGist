@@ -31,4 +31,6 @@
     <string name="email">email</string>
     <string name="save">Save</string>
     <string name="revert">Revert</string>
+    <string name="start_with_animator">Start with Animator</string>
+    <string name="camerax">CameraX</string>
 </resources>

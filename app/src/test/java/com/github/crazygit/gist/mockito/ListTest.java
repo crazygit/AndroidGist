@@ -47,7 +47,7 @@ public class ListTest {
 
 
         //Impossible: real method is called so spy.get(0) throwsIndexOutOfBoundsException (the list is yet empty)
-        when(spy.get(0)).thenReturn("foo");
+//        when(spy.get(0)).thenReturn("foo");
 
         //You have to use doReturn() for stubbing
         doReturn("foo").when(spy).get(0);
