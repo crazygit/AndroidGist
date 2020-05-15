@@ -6,6 +6,7 @@ import android.view.View;
 import com.github.crazygit.gist.R;
 import com.github.crazygit.gist.base.BaseActivity;
 import com.github.crazygit.gist.databinding.ActivityJetpackBinding;
+import com.github.crazygit.gist.room.RoomWordSampleActivity;
 
 public class Jetpack extends BaseActivity<ActivityJetpackBinding> implements View.OnClickListener {
 
@@ -15,6 +16,7 @@ public class Jetpack extends BaseActivity<ActivityJetpackBinding> implements Vie
         dataBinding = ActivityJetpackBinding.inflate(getLayoutInflater());
         setContentView(dataBinding.getRoot());
         dataBinding.btnLivedata.setOnClickListener(this);
+        dataBinding.btnRoom.setOnClickListener(this);
     }
 
     @Override
@@ -22,6 +24,9 @@ public class Jetpack extends BaseActivity<ActivityJetpackBinding> implements Vie
         switch (v.getId()) {
             case R.id.btn_livedata:
                 startSubActivity(JetpackLiveDataDemo.class);
+                break;
+            case R.id.btn_room:
+                startSubActivity(RoomWordSampleActivity.class);
                 break;
             default:
                 break;

@@ -11,5 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/jetpack_livedata" />
+    <Button
+        android:id="@+id/btn_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/jetpack_room" />
 
 </LinearLayout>

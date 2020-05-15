@@ -33,7 +33,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 // 参考
-//        https://codelabs.developers.google.com/codelabs/camerax-getting-started
+// https://codelabs.developers.google.com/codelabs/camerax-getting-started
 public class CameraXDemo extends BaseActivity<ActivityCameraXDemoBinding> {
 
     private static final int REQUEST_CODE_PERMISSIONS = 557;
